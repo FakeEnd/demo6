@@ -130,49 +130,80 @@ a {
     line-height: 47px;
 }
 
-/* #swiper{
-    height: 450px;
+#swiper{
+    height: 447px;
+}
+
+.swiper-active{
+    z-index: 5;
+}
+
+#swiper-container{
+    height: 447px;
+    position: relative;
+}
+/* .swiper-item{
+    height: 100%;
+    width: 100%;
+    background-color: red;
+    background: url(./images/swiper-background.gif) center no-repeat,
+                url(./images/swiper-content.gif)center no-repeat;
 } */
+.swiper-item {
+    color: white;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    text-align: center;
+}
 
+.swiper-item:nth-child(0){
+    background: url(./images/swiper-background.gif) center no-repeat;
+}
 
+.swiper-item:nth-child(1){
+    background: url(./images/swiper-background.gif) center no-repeat;
+}
 
+.swiper-item:nth-child(2){
+    background: url(./images/swiper-background.gif) center no-repeat;
+}
 
+.swiper-item:nth-child(3){
+    background: url(./images/swiper-background.gif) center no-repeat;
+}
 
+.swiper-content{
+    width: 1175px;
+    height: 447px;
+    margin: 0px auto;
+}
 
+#swiper-pointlist{
+    z-index: 20;
+    display: flex;
+    height: 40px;
+    width: 1172px;
+    position: relative;
+    bottom: 40px;
+    left: 135px;
+    justify-content: center;
+    background:  url(./images/矩形\ 4.png) top center;
+}
+.swiper-point{
+    cursor: pointer;
+    height: 18px;
+    width: 18px;
+    margin-left: 18px;
+    background-color: rgba(0, 0, 0,0);
+    border: 2px solid white;
+    border-radius: 100%;
 
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.swiper-active-point{
+    background-color: white;
+}
 
 
 #news {
