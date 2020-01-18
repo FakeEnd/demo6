@@ -58,9 +58,27 @@
             </div>
 
             <div id="swiper">
-                <div id="swiper-container">
-
-                </div>
+                <ul id="swiper-container">
+                    <li class="swiper-item swiper-active">
+                        <a href="#"><img class="swiper-content" src="./images/swiper-content.gif"></a>
+                    </li>
+                    <li class="swiper-item">
+                        <a href="#"><img class="swiper-content" src="./images/swiper-content.gif"></a>
+                    </li>
+                    <li class="swiper-item">
+                        <a href="#"><img class="swiper-content" src="./images/swiper-content.gif"></a>
+                    </li>
+                    <li class="swiper-item">
+                        <a href="#"><img class="swiper-content" src="./images/swiper-content.gif"></a>
+                    </li>
+                   
+                </ul>
+                <ul id="swiper-pointlist">
+                    <li class="swiper-point swiper-active-point" data-index='0'></li>
+                    <li class="swiper-point"  data-index='1'></li>
+                    <li class="swiper-point"  data-index='2'></li>
+                    <li class="swiper-point"  data-index='3'></li>
+                </ul>
             </div>
             <div id="news">
                 <div id="news-container">
@@ -205,7 +223,9 @@
                 <ul id="activities-tab">
                     <div class="activities-tab-cut left"></div>
                     <li class="act"><a>缤纷校园</a></li>
+                    <div class="activities-cut-hide" ></div>
                     <li><a>学院风采</a></li>
+                    <div class="activities-cut"></div>
                     <li><a>双心活动</a></li>
                     <div class="activities-tab-cut right"></div>
                 </ul>
@@ -305,32 +325,10 @@
                 <hr id="footer-cut">
                 <p>Copyright © 2000-2017 www.online.sdu.edu.cn All Rights Reserved.|鲁ICP备030304号 SDU ICP 0009号</p>
             </div>
-        </div>
-    </body>
-    <script>
-        window.onload = function () {
-            var activities_tab = document.getElementById('activities-tab');
-            var activities_tab_li = activities_tab.getElementsByTagName('li');
-            var activities_content = document.getElementById('activities-content');
-            var activities_content_li = activities_content.getElementsByTagName('div');
-            var length = activities_tab_li.length;
-            var i, j;
-            console.log(activities_content_li)
-            for (i = 0; i < length; i++) {
-                activities_tab_li[i].index = i;
-                activities_tab_li[i].onclick = function () {
-                    for (j = 0; j < length; j++) {
-                        activities_tab_li[j].className = '';
-                        activities_content_li[j].className = 'hide';
-                    }
-                    activities_tab_li[this.index].className = 'act';
-                    activities_content_li[this.index].className = '';
-                    if (condition) {
+            </ul>
 
-                    }
-                }
-            }
-        }
-    </script>
+            <script src="./index.js"></script>
+    </body>
+
 
 </html>
