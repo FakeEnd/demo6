@@ -223,6 +223,7 @@ a {
 }
 
 #news-title p {
+    font-family: AvenirNext;
     padding-top: 33px;
     margin-left: 20px;
     font-size: 32px;
@@ -252,7 +253,12 @@ a {
 }
 
 .news-content-block p{
-    margin-top: 20px;
+    font-family: AvenirNext;
+    margin-top: 15px;
+    font-size: 18px;
+    line-height: 22px;
+    color: #333333;
+    letter-spacing: 0.05em;
 }
 
 #news-footer {
@@ -295,8 +301,6 @@ a {
     margin-top: 47px;
     margin-left: 20px;
 }
-
-
 
 #information-left-cut {
     height: 4px;
@@ -554,7 +558,7 @@ a {
 
 #events-container {
     margin: 0px auto;
-    margin-top: 45px;
+    margin-top: 40px;
     display: flex;
     width: 1175px;
     justify-content: space-around;
@@ -622,29 +626,56 @@ a {
 }
 
 #footer-elselogo {
+    height: 40px;
     display: flex;
     flex-flow: row-reverse;
 }
 
 #weixin {
+    transition: .5s;
     width: 40px;
     height: 40px;
     margin-right: 16px;
     background-image: url(./images/weixinlogo.png);
 }
 
+#weixin:hover {
+    margin-right: 40px;
+    transform:scale(2,2);
+    background: url(./images/wx_ewm.jpg) no-repeat center center;
+    background-size:100% 100%;
+}
+
 #qq {
+    transition: .5s;
     width: 40px;
     height: 40px;
     margin-right: 16px;
     background-image: url(./images/qqlogo.png);
 }
 
+#qq:hover {
+    margin-right: 40px;
+    margin-left: 15px;
+    transform:scale(2,2);
+    background: url(./images/qq_ewm.jpg) no-repeat center center;
+    background-size:100% 100%;
+}
+
 #sina {
+    transition: .5s;
     width: 40px;
     height: 40px;
     margin-right: 76px;
     background-image: url(./images/sinalogo.png);
+}
+
+#sina:hover {
+    margin-right: 76px;
+    margin-left: 15px;
+    transform:scale(2,2);
+    background: url(./images/wb_ewm.jpg) no-repeat center center;
+    background-size:100% 100%;
 }
 
 #footer ul {
